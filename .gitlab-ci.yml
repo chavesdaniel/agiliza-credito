@@ -1,0 +1,21 @@
+stages:
+  - build
+  - deploy
+
+build_job:
+  stage: build
+  script:
+    - /sandman/build.sh
+  except:
+    - deploy  
+  tags:
+    - sandman-build
+
+deploy_job:
+  stage: deploy
+  script:
+    - /sandman/deploy.sh
+  only:
+    - deploy  
+  tags:
+    - sandman-deploy    

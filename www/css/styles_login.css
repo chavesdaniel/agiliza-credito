@@ -1,0 +1,105 @@
+html,
+body {
+  height: 100%;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+body{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.fundo {
+    background-image: url("../imagens/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.img_logo{
+    height: 127px;
+    width: 127px;
+}
+
+.btn-agiliza {
+    color: #fff;
+    background-color: #49c6c1;
+  }
+  
+  .btn-agiliza:hover {
+    color: #fff;
+    background-color: #49c6c1;
+    border-color: #fff;
+  }
+  
+  .btn-agiliza:focus, .btn-agiliza.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+  
+  .btn-agiliza.disabled, .btn-agiliza:disabled {
+    color: #fff;
+    background-color: #49c6c1;
+    border-color: #fff;
+  }
+  
+  .btn-agiliza:not(:disabled):not(.disabled):active, .btn-agiliza:not(:disabled):not(.disabled).active,
+  .show > .btn-agiliza.dropdown-toggle {
+    color: #fff;
+    background-color: #49c6c1;
+    border-color: #fff;
+  }
+  
+  .btn-agiliza:not(:disabled):not(.disabled):active:focus, .btn-agiliza:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+  
+  .input-login {
+      border-bottom:  2px solid #90a4ae;
+      border-top: 0 none;
+      border-left: 0 none;
+      border-right: 0 none;
+      background-color:transparent;
+      font-size: 18px;
+      color: #fff;
+  }
+
+  .input-login:active:focus{
+    background-color:transparent;
+    color: #cfd8dc;
+  }
+
+  .lb-login {
+      color: #cfd8dc;
+      font-size: 10px;
+  }
+
+  .input-login:focus {
+    color: #fff;
+    background-color: transparent;
+    outline: 0;
+  }

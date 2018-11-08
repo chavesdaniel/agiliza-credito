@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Agiliza Crédito</title>
+  <link rel="icon" href="icons/icon-72x72.png" type="image/png"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/Navigation-Clean.css" />
+  <link rel="stylesheet" href="css/Footer-Basic.css" />
+  <link rel="stylesheet" href="css/Footer-Dark.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127969349-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127969349-1');
+    </script>
+    <!-- end Google Analytics -->
+</head>
+<body>
+        <header class="main-header">
+                <div>
+                  <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-info navigation-clean">
+                      <div class="container"><a href="index_home.html" class="navbar-brand text-white"><img src="imagens/icnAgiliza072.png" />  Agiliza Crédito</a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                          <div class="collapse navbar-collapse" id="navcol-1">
+                              <ul class="nav navbar-nav ml-auto">
+                                  <li role="presentation" class="nav-item"><a href="index_home.html" class="nav-link"><i class="fa fa-pie-chart"></i> Dashboard</a></li>
+                                  <li role="presentation" class="nav-item"><a href="mensagem.html" class="nav-link"><i class="fa fa-bell"></i> Notificações <span class="badge badge-primary" id="bad_mensagem"></span></a></li>
+                                  <li class="nav-item" role="presentation"><a href="index.html" class="nav-link"><i class="fa fa-power-off"></i> Sair </a></li>
+                                </ul>
+                      </div>
+              </div>
+              </nav>
+              </div>
+              </header>
+    <main class="fundo">
+        <div class="container-fluid padding">
+            <div class="row">
+                <div id="index-main-div-id" class="col-md-12">
+                    <img src="" id="img_arquivo">
+                    <canvas id="can_arquivo"></canvas>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xs-3">
+                    <button id="btn_proximo" class="btn btn-block btn-agiliza">Proximo</button>
+                </div>
+                <div class="col-md-6 col-xs-3">
+                    <button id="btn_anterior" class="btn btn-block btn-agiliza">Anterior</button>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+                <div class="col-md-6 col-xs-3">
+                        <button id="btn_enviar" class="btn btn-block btn-agiliza">Enviar</button>
+                </div>
+                <div class="col-md-6 col-xs-3">
+                    <button id="btn_cancelar" class="btn btn-block btn-agiliza">Cancelar</button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <div class="footer-dark" style="background-color: rgb(72,68,136);">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Saiba mais</h3>
+                            <ul>
+                                <li><a id="mixTeste" href="#">O que fazemos?</a></li>
+                                <li><a href="#">Quem somos</a></li>
+                                <li><a href="feedback.html">Fale conosco</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3></h3>
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li></li>
+                                <li><a href="#"></a></li>
+                            </ul><img src="imagens/labbstextoBranco.png" class="center" style="float:right; position:relative; top:-12px;" /></div>
+                        <div class="col-md-6 item text">
+                            <h3>Agiliza Crédito</h3>
+                            <p>Nós somos uma startup do Banco do Brasil, vinculada ao Labbs (Laboratório Avançado do Banco do Brasil). </p>
+                        </div>
+                    </div>
+                    <p class="copyright">Agiliza Crédito 2018</p>
+                </div>
+            </footer>
+          </div>
+    <script src="libraries/jquery-3.3.1.js"></script>
+    <script src="libraries/popper.min.js"></script>
+    <script src="libraries/bootstrap.min.js"></script>
+    <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="js/w3data.js"></script>
+    <script src="js/pre_envio.js"></script>
+    <script src="js/verificar_mensagem.js"></script>
+</body>
+</html>

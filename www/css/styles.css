@@ -1,0 +1,219 @@
+/* * {
+    border: 1px solid red !important;
+} */
+
+html,
+body {
+  height: 100%;
+}
+
+.cor_menu {
+    background-color: #5093b0;
+}
+
+.fundo {
+    background-image: url("../imagens/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    padding-top: 7.4em;
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.mensagem-envio {
+    color: #fff;
+    font-family: 'Geomanist-Light';
+}
+
+.centralizado {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.progresso {
+    margin: 0 auto;
+    width: 150;
+    height: 150;
+    position: absolute;
+    top: 50%;
+    vertical-align: middle;
+}
+
+.mensagem {
+    padding: 22px;
+    background-color: #fff;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+.mensagem-icone {
+    padding-top: 5px;
+}
+
+.mensagem-lida-cabecalho {
+    color: #808080;
+    display: block;
+    font-weight: bold;
+}
+
+.mensagem-lida-corpo {
+    color: #808080;
+    text-align: justify;
+    display: block;
+}
+
+
+.mensagem-cabecalho {
+    color: #119b7c;
+    display: block;
+    font-weight: bold;
+}
+
+.mensagem-corpo {
+    color: #5b5b5b;
+    text-align: justify;
+    display: block;
+}
+
+.mensagem-rodape {
+    color: #119b7c;
+    font-weight: bold;
+}
+
+.ct-slice-donut {
+    cursor: pointer;
+}
+
+.ct-chart-donut {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.donut-value-label-class {
+    color: #fff;
+    font-weight: 100;
+    font-size: 7vw;
+}
+
+.doughnut-center-number {
+    color: #fff;
+    font-weight: 100;
+    font-size: 14vw;
+}
+
+.doughnut-center-number-sufix {
+    font-weight: 100;
+    font-size: 10vw;
+}
+
+.donut-value-number-sufix {
+    font-weight: 100;
+    font-size: 5vw;
+}
+
+.doughnut-center-slice-type-text {
+    color: #fff;
+    font-weight: 200;
+    font-size: 4vw;
+    line-height: 0px;
+}
+
+.donut-type-label-class {
+    color: #fff;
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+.doughnut-center-slice-type-text-to-detail {
+    color: #adf8fd;
+    font-weight: 200;
+    font-size: 3vw;
+    line-height: 50px;
+}
+
+.ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
+    stroke: #f8c01c;
+}
+.ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
+    stroke: #62e3f7;
+}
+.ct-series-c .ct-bar, .ct-series-c .ct-line, .ct-series-c .ct-point, .ct-series-c .ct-slice-donut {
+    stroke: #7ef670;
+}
+.ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut {
+    stroke: #f46f6f;
+}
+.ct-series-e .ct-bar, .ct-series-e .ct-line, .ct-series-e .ct-point, .ct-series-e .ct-slice-donut {
+    stroke: #BBBBBB;
+}
+.ct-series-f .ct-bar, .ct-series-f .ct-line, .ct-series-f .ct-point, .ct-series-f .ct-slice-donut {
+    stroke: #BBBBBB;
+}
+
+.tamanho-grafico {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.btn-agiliza {
+    color: #fff;
+    background-color: #49c6c1;
+  }
+  
+  .btn-agiliza:hover {
+    color: #fff;
+    background-color: #49c6c1;
+    border-color: #fff;
+  }
+  
+  .btn-agiliza:focus, .btn-agiliza.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+  
+  .btn-agiliza.disabled, .btn-agiliza:disabled {
+    color: #fff;
+    background-color: #49c6c1;
+    border-color: #fff;
+  }
+  
+  .btn-agiliza:not(:disabled):not(.disabled):active, .btn-agiliza:not(:disabled):not(.disabled).active,
+  .show > .btn-agiliza.dropdown-toggle {
+    color: #fff;
+    background-color: #49c6c1;
+    border-color: #fff;
+  }
+  
+  .btn-agiliza:not(:disabled):not(.disabled):active:focus, .btn-agiliza:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+
+  .mensagem-feedback{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.7vw;
+  }
+
+  .text-feedback {
+    display: block;
+    width: 50vw;
+  }
+
+  .navbar-collapse.collapse.in {
+    display: block!important;
+  }
+  
+  .ct-chart-donut{
+	min-width:312px;
+}

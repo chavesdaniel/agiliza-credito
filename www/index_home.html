@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Agiliza Crédito</title>
+    <link rel="icon" href="icons/icon-72x72.png" type="image/png"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/Navigation-Clean.css" />
+    <link rel="stylesheet" href="css/Footer-Basic.css" />
+    <link rel="stylesheet" href="css/Footer-Dark.css" />
+    <link rel="stylesheet" href="libraries/chartist.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- start Mixpanel -->
+    <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+    0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+    mixpanel.init("b118c93f1850f7eaf42d110df3debf3f");</script>
+    <!-- end Mixpanel -->
+
+    <!-- Hotjar Tracking Code for agcredito.labbs.com.br -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1062181,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <!-- end Hotjar -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127969349-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127969349-1');
+    </script>
+    <!-- end Google Analytics -->
+  </head>
+  <body onresize="novoChart()">
+    <header class="main-header">
+        <div>
+            <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-info navigation-clean">
+                <div class="container"><a id="mpLogoHome" href="index_home.html" class="navbar-brand text-white"><img src="imagens/icnAgiliza072.png" />  Agiliza Crédito</a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li role="presentation" class="nav-item"><a id="mpLinkDashboard" href="index_home.html" class="nav-link active"><i class="fa fa-pie-chart"></i> Dashboard</a></li>
+                            <li role="presentation" class="nav-item"><a href="#" class="nav-link" id="lnk_enviar"><i class="fa fa-send"></i> Enviar documentos</a></li>
+                            <li role="presentation" class="nav-item"><a id="mpLinkMensagens" href="mensagem.html" class="nav-link"><i class="fa fa-bell"></i> Notificações <span class="badge badge-primary" id="bad_mensagem"></span></a></li>
+                            <li class="nav-item" role="presentation"><a id="mpLinkSair" href="index.html" class="nav-link"><i class="fa fa-power-off"></i> Sair </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="fundo" style="height:100%;vertical-align:middle;">
+
+        <div class="container-fluid padding"style="height:100%;vertical-align:middle;">
+            <div id="index-main-div-id" style="text-align: center; margin: auto; width:100%; vertical-align:middle;">
+                <div class="ct-chart ct-golden-section tamanho-grafico" style="text-align: center; height:100%; margin: auto; vertical-align:middle;"></div>
+            </div>
+            <div style="text-align: center; margin: auto; width:100%; padding-top:50px;">
+                <span id="donut-type-id" class="donut-type-label-class"></span>
+                <br/>
+                <span id="donut-value-id" class="donut-value-label-class"></span>
+                <br/>
+                <span id="saldo-devedor-id" class="donut-type-label-class"></span>
+            </div>
+        </div>
+        <input type="file" id="fil_galeria" />
+    </main>
+    <div class="footer-dark" style="background-color: rgb(72,68,136);">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Saiba mais</h3>
+                        <ul>
+                            <li><a id="mixTeste" href="#">O que fazemos?</a></li>
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="feedback.html">Fale conosco</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3></h3>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li></li>
+                            <li><a href="#"></a></li>
+                        </ul><img src="imagens/labbstextoBranco.png" class="center" style="float:right; position:relative; top:-12px;" /></div>
+                    <div class="col-md-6 item text">
+                        <h3>Agiliza Crédito</h3>
+                        <p>Nós somos uma startup do Banco do Brasil, vinculada ao Labbs (Laboratório Avançado do Banco do Brasil). </p>
+                    </div>
+                </div>
+                <p class="copyright">Agiliza Crédito 2018</p>
+            </div>
+        </footer>
+      </div>
+    <script src="libraries/jquery-3.3.1.js"></script>
+    <script src="libraries/popper.min.js"></script>
+    <script src="libraries/bootstrap.min.js"></script>
+    <script src="libraries/chartist.min.js"></script>
+    <script src="libraries/chartist-plugin-fill-donut.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/verificar_mensagem.js"></script>
+  </body>
+</html>
